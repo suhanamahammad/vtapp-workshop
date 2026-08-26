@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Suhana's Game Page</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f2f2f2;
+            padding: 40px;
+        }
+
+        Suhana {
+            display: block;
+        }
+
+        .games, .fact {
+            background-color: white;
+            width: 350px;
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        button {
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+
+        #hello {
+            margin-top: 20px;
+            font-size: 24px;
+        }
+
+        a {
+            display: inline-block;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <Suhana>
+
+        <h1>🎮 Suhana's Game Zone</h1>
+
+        <div class="games">
+            <h2>Latest Games</h2>
+
+            <ul>
+                <li>Valorant</li>
+                <li>Minecraft</li>
+                <li>Fortnite</li>
+                <li>GTA V</li>
+                <li>Roblox</li>
+            </ul>
+        </div>
+
+        <div class="fact">
+            <h2>🤯 Random Fun Fact</h2>
+            <p>Octopuses have three hearts!</p>
+        </div>
+
+        <button onclick="sayHello()">Say Hello</button>
+
+        <div id="hello"></div>
+
+        <br>
+
+        <!-- Link back to test.html -->
+        <a href="test.html">⬅️ Go back to Test Page</a>
+
+    </Suhana>
+
+    <script>
+        function sayHello() {
+            document.getElementById("hello").textContent =
+                "Hello, Suhana! 👋";
+        }
+    </script>
+
+</body>
+</html>

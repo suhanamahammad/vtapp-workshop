@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My First Web Page</title>
+</head>
+
+<body>
+
+    <h1>Say Hello!</h1>
+
+    <label for="name">Enter your name:</label>
+    <input type="text" id="name">
+
+    <button onclick="sayHello()">Say Hello</button>
+
+    <h2 id="message"></h2>
+
+    <script>
+        function sayHello() {
+            let name = document.getElementById("name").value;
+
+            document.getElementById("message").textContent =
+                "Hello, " + name + "!";
+        }
+    </script>
+
+</body>
+</html>

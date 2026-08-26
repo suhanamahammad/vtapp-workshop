@@ -1,0 +1,345 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: #eaf7ff;
+    color: #45616d;
+    font-family: "Playfair Display", serif;
+}
+
+
+/* NAVIGATION */
+
+nav {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 18px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    border-bottom: 2px solid #f6cbd8;
+}
+
+.logo {
+    color: #72aabd;
+    font-family: "Caveat", cursive;
+    font-size: 32px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #527582;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    color: #e39aaa;
+}
+
+
+/* HOME */
+
+.hero {
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    padding: 60px 10%;
+}
+
+.hero-text {
+    max-width: 550px;
+}
+
+.small-title {
+    font-family: "Caveat", cursive;
+    font-size: 25px;
+    color: #d88fa1;
+}
+
+h1 {
+    font-size: 60px;
+    color: #568da1;
+}
+
+h1 span {
+    color: #db91a5;
+}
+
+.hero-text p {
+    font-size: 19px;
+    line-height: 1.8;
+}
+
+
+/* COTTAGE CARD */
+
+.cottage-card {
+    background: white;
+    width: 300px;
+    padding: 35px;
+    text-align: center;
+
+    border-radius: 50% 50% 20px 20px;
+
+    box-shadow: 0 15px 40px rgba(92, 157, 180, 0.2);
+}
+
+.window {
+    font-size: 35px;
+    padding: 35px 10px;
+    background: #dff3ff;
+    border-radius: 50% 50% 10px 10px;
+}
+
+.flowers {
+    font-size: 25px;
+}
+
+
+/* BUTTONS */
+
+.main-button,
+button {
+    display: inline-block;
+
+    background: #e9a5b5;
+    color: white;
+
+    border: none;
+    border-radius: 25px;
+
+    padding: 12px 22px;
+
+    font-family: "Playfair Display", serif;
+
+    cursor: pointer;
+
+    text-decoration: none;
+
+    margin-top: 20px;
+}
+
+button:hover,
+.main-button:hover {
+    background: #d9879c;
+}
+
+
+/* GENERAL PAGE */
+
+.page {
+    max-width: 1000px;
+    margin: auto;
+    padding: 60px 25px;
+}
+
+.page > h1 {
+    text-align: center;
+}
+
+
+/* CARDS */
+
+.card {
+    background: rgba(255, 255, 255, 0.9);
+
+    padding: 30px;
+
+    margin: 25px 0;
+
+    border-radius: 20px;
+
+    box-shadow: 0 10px 30px rgba(82, 142, 160, 0.12);
+
+    border: 1px solid #d5eef7;
+}
+
+.card h2 {
+    color: #669bad;
+}
+
+
+/* INTEREST GRID */
+
+.interest-grid {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 20px;
+
+    text-align: center;
+}
+
+.interest-grid div {
+    background: #eefaff;
+
+    padding: 20px;
+
+    border-radius: 15px;
+}
+
+
+/* FAVORITES */
+
+.favorite-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 20px;
+}
+
+.favorite-grid ul {
+    line-height: 2;
+}
+
+
+/* GAME */
+
+.game-box {
+    text-align: center;
+
+    background: #fff7fa;
+
+    border: 2px dashed #efb3c1;
+
+    border-radius: 20px;
+
+    padding: 30px;
+
+    margin-top: 40px;
+}
+
+
+/* HISTORY */
+
+.timeline {
+    margin-top: 40px;
+}
+
+.timeline-item {
+    display: flex;
+
+    gap: 25px;
+
+    background: white;
+
+    padding: 25px;
+
+    margin: 20px 0;
+
+    border-radius: 20px;
+
+    border-left: 6px solid #e7a5b5;
+}
+
+.timeline-item span {
+    font-size: 35px;
+}
+
+
+/* FOOTER */
+
+footer {
+    text-align: center;
+
+    padding: 30px;
+
+    background: white;
+
+    color: #7899a3;
+}
+
+
+/* POPUP */
+
+.popup {
+    position: fixed;
+
+    inset: 0;
+
+    background: rgba(65, 120, 140, 0.35);
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    z-index: 100;
+}
+
+.popup-box {
+    background: white;
+
+    width: 400px;
+
+    max-width: 90%;
+
+    padding: 40px;
+
+    text-align: center;
+
+    border-radius: 25px;
+
+    border: 3px solid #f0bdca;
+
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+}
+
+.popup-box h2 {
+    color: #db91a5;
+
+    font-family: "Caveat", cursive;
+
+    font-size: 40px;
+}
+
+.close {
+    float: right;
+
+    font-size: 28px;
+
+    cursor: pointer;
+
+    color: #7899a3;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 700px) {
+
+    nav {
+        flex-direction: column;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 45px;
+    }
+
+    .favorite-grid,
+    .interest-grid {
+        grid-template-columns: 1fr;
+    }
+}
